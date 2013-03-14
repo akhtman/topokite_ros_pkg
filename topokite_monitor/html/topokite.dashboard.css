@@ -1,0 +1,102 @@
+body {
+	margin: 0 !important;
+}
+
+#dashboard > ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+}
+
+#indicators, #controls, #instruments {
+	font-family: 'Play', sans-serif;
+	font-size: 12px !important;
+	font-weight: normal !important;
+	line-height: 15px !important;
+	width: 322px;
+	margin: 0 0 5px 0;
+	border: 0;
+	padding: 0;
+	position: relative;
+	z-index: 2;
+}
+
+#indicators {
+	height: 90px;
+}
+
+#instruments {
+	height: 110px;
+}
+
+#controls {
+	height: 50px;
+	margin: 0;
+}
+
+#indicators span, #controls span {
+	width: 68px;
+	height: 30px;
+	background-color: #eee;
+	border: 1px solid #888;
+	margin: 5px 5px;
+	float: left;
+	text-align: center;
+	vertical-align: middle !important;
+}
+
+#instruments > div {
+	float: left;
+}
+
+#instruments #battery-metter {
+	width: 35px;
+	height: 97px;
+	border: 1px solid #888;
+	margin: 0 0 5px 20px;
+}
+ 
+#comms-metters {
+	width: 35px;
+	height: 100px;
+	margin: 0 20px 0 10px;
+}
+
+#instruments #rc-metter,
+#instruments #wifi-metter {
+	height: 45px;
+	border: 1px solid #888;
+	margin: 0 0 5px 0;
+}
+
+#instruments #ascii {
+	right: 10px !important;
+	width: 170px;
+	margin: 5px 5px 10px 5px;
+	padding: 0;
+}
+
+#instruments #ascii div {
+	width: 100px;
+	text-align: right !important;
+	float: left;
+}
+
+#instruments #ascii span {
+	width: 50px;
+	text-align: left !important;
+	padding: 0 10px;
+	float: left;
+}
+
+#pfd {
+	width: 320px;
+	height: 240px;
+	margin: 0;
+	padding: 0;
+}
+
+#pfd tspan {
+	font-family: 'Play', sans-serif !important;
+}

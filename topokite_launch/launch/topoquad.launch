@@ -1,0 +1,89 @@
+<launch>
+
+	
+  <machine name="topoquad" address="topoquad" user="topo" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" default="true" />
+	###<machine name="toporos"  address="toporos"  ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" />
+	###<machine name="topopc22" address="topopc22" user="topo" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" />
+
+#### Asctec Autopilot ###################################
+
+  <node pkg="asctec_autopilot" type="autopilot_node" name="AutoPilotNode" output="screen" machine="topoquad">
+
+    <remap from="/asctec/ESTOP" to="/mav/estop"/>  
+
+    <param name="port" type="string" value="/dev/ttyUSB0"/>
+    <param name="speed" type="int" value="57600"/>
+
+    <param name="freq" type="double" value="10.0"/>
+
+	<param name="enable_CONTROLLER_OUTPUT" type="bool" value="true"/>
+	<param name="interval_CONTROLLER_OUTPUT" type="int" value="1"/>
+    <param name="offset_CONTROLLER_OUTPUT" type="int" value="0"/>
+
+    <param name="enable_IMU_CALCDATA" type="bool" value="true"/>
+    <param name="interval_IMU_CALCDATA" type="int" value="1"/>
+    <param name="offset_IMU_CALCDATA" type="int" value="0"/>
+
+    <param name="enable_LL_STATUS" type="bool" value="true"/>
+    <param name="interval_LL_STATUS" type="int" value="1"/>
+    <param name="offset_LL_STATUS" type="int" value="0"/>
+
+    <param name="enable_GPS_DATA" type="bool" value="true"/>
+	<param name="interval_GPS_DATA" type="int" value="1"/>
+    <param name="offset_GPS_DATA" type="int" value="0"/>
+
+	<param name="enable_GPS_DATA_ADVANCED" type="bool" value="true"/>
+	<param name="interval_GPS_DATA_ADVANCED" type="int" value="1"/>
+    <param name="offset_GPS_DATA_ADVANCED" type="int" value="10"/>
+
+	<param name="enable_CONTROL" type="bool" value="true"/>
+	<param name="interval_CONTROL" type="int" value="1"/>
+    <param name="offset_CONTROL" type="int" value="0"/>
+
+	<param name="enable_RC_DATA" type="bool" value="true"/>
+	<param name="interval_RC_DATA" type="int" value="1"/>
+    <param name="offset_RC_DATA" type="int" value="0"/>
+
+  </node>
+
+  #### Asctec Proc ########################################
+
+  <node pkg="asctec_proc" type="asctec_proc_node" name="AsctecProcNode" output="screen" machine="topoquad">
+
+    <param name="enable_state_changes" type="bool" value="false"/>
+    <param name="enable_ctrl_thrust"   type="bool" value="false"/>
+    <param name="enable_ctrl_yaw"      type="bool" value="false"/>
+
+  </node>
+
+	#### UECam ##############################################
+
+	<!--<node name="ueyecam" pkg="ueyecam" type="ueyecam" output="screen" machine="topoquad">
+			<param name="cameraInfoFile" value="file://$(find ueyecam)/camera_info/ueyecam.ini" />
+   		<param name="fps" value="9" />
+			<param name="liveMode" value="true" />
+   		<param name="encoding" value="bgr8" />
+			<param name="gainAuto" value="true" />
+			<param name="roiEnable" value="false" />
+   		<param name="roiWidth" value="640" />
+   		<param name="roiHeight" value="480" />
+   		<param name="xOffset" value="900" />
+   		<param name="yOffset" value="800" />
+  </node>-->
+
+	#### Front Cam ###########################################
+	
+	<!--<node pkg="uvc_camera" type="camera_node" name="uvc_camera" output="screen">
+	    <param name="width" type="int" value="320" />
+	    <param name="height" type="int" value="240" />
+	    <param name="fps" type="int" value="10" />
+	    <param name="frame" type="string" value="front_view" />
+	    <param name="device" type="string" value="/dev/video0" />
+	    <param name="camera_info_url" type="string" value="file://$(find uvc_camera)/example.yaml" />
+	</node>-->
+
+	<node name="rosbridge" pkg="rosbridge" type="rosbridge.py" machine="topoquad"/>
+
+	<node name="mjpeg_server" pkg="mjpeg_server" type="mjpeg_server" machine="topoquad"/>
+	
+</launch>

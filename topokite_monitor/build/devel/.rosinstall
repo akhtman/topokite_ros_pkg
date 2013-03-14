@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/topo/ros/topokite_ros_pkg/topokite_monitor/build/devel/setup.sh

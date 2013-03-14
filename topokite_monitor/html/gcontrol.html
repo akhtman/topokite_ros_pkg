@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <head> 
+    <title>Ground control</title>
+    <link href="http://www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+		<link href="topokite.dashboard.css" media="all" rel="stylesheet" type="text/css" />
+		<meta http-equiv="content-script-type" content="text/javascript"> 
+		<meta http-equiv="font" content="application/x-font-woff">
+		<script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
+		<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+		<script type="text/javascript" src="sprintf.js"></script>
+		<script type="text/javascript" src="cowgis.topokite.js"></script>
+	</head>
+	<body>
+		<div id="dashboard" class='inpath'>
+			<ul>
+				<li id="indicators">
+					<div>
+						<span class="ros-link">ROS LINK</span>
+						<span class="motors">MOTORS</span>
+						<span class="flight-mode">FLIGHT MODE</span>
+						<span class="control-mode">CONTROL MODE</span>
+					</div>
+					<div>
+						<span class="gps-fix">GPS FIX</span>
+						<span>BATTERY LOW</span>
+						<span>TOO FAR</span>
+						<span>INT ERROR</span>
+					</div>
+				</li>
+				<li id="controls">
+					<div>
+						<span class="next-wpt">GOTO NEXT WPT</span>
+						<span class="home-wpt">GOTO HOME WPT</span>
+						<span class="record-log">RECORD LOG</span>
+						<span class="save-image">SAVE IMAGE</span>
+					</div>
+				</li>
+				<li id="instruments">
+					<div id="battery-metter"></div>
+					<div id="comms-metters">
+						<div id="rc-metter"></div>
+						<div id="wifi-metter"></div>
+					</div>
+					<div id="ascii">
+						<div id="gnd-speed">GROUND SPD</div><span>10 m/s</span>
+						<div id="flight-time">TIME IN FLIGHT</div><span>20:20.2</span>
+						<div id="dst-to-home">DIST. TO HOME</div><span>345 m</span>
+						<div id="altitude">ALTITUDE</div><span>20.3 m</span>
+						<div id="thrust">THRUST</div><span>70 %</span>
+					</div>
+				</li>
+				<!--<li id='pfd'>
+					<img width="324" src="http://www.b737.org.uk/images/pfd.jpg"/>
+				</li>-->
+			</ul>
+		</div>
+		<div id="viz"></div>
+	</body>
+</html>

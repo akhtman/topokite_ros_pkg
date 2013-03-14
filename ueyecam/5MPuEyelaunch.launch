@@ -1,0 +1,14 @@
+<launch>
+  <node name="roscamClass" pkg="ros_ueyenode" type="roscamClass" output="screen">
+   		<param name="camNameSpace" value="/camera" />
+   		<param name="lps" value="2" />
+   		<param name="fullResolution" value="true" />
+   		<param name="liveMode" value="true" />
+   		<param name="encoding" value="rgb8" />
+   		<!-- only valid if fullResolution is false -->
+   		<param name="width" value="640" />
+   		<param name="height" value="480" />
+   		<param name="x_offset" value="0" />
+   		<param name="y_offset" value="0" />
+  </node>
+</launch>

@@ -1,0 +1,11 @@
+<package>
+  <description brief="Collection of launch files"></description>
+  <author>TOPO</author>
+  <license>GPL</license>
+  <review status="unreviewed" notes=""/>
+  <depend package="roscpp"/>
+  <export>
+    <cpp cflags="-I${prefix}/include -I${prefix}/msg/cpp" lflags="-L${prefix}/lib"/>
+  </export>
+</package>
+

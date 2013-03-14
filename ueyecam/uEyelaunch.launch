@@ -1,0 +1,14 @@
+<launch>
+  <node name="ueyecam" pkg="ueyecam" type="ueyecam" output="screen">
+   		<param name="camNameSpace" value="/ueyecam" />
+   		<param name="fps" value="15" />
+   		<param name="fullResolution" value="false" />
+   		<param name="liveMode" value="true" />
+   		<param name="encoding" value="rgb8" />
+   		<!-- only valid if fullResolution is false -->
+   		<param name="width" value="640" />
+   		<param name="height" value="480" />
+   		<param name="x_offset" value="0" />
+   		<param name="y_offset" value="0" />
+  </node>
+</launch>

@@ -1,0 +1,28 @@
+
+(cl:in-package :asdf)
+
+(defsystem "ueyecam-srv"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :sensor_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "setFPS" :depends-on ("_package_setFPS"))
+    (:file "_package_setFPS" :depends-on ("_package"))
+    (:file "setROIFull" :depends-on ("_package_setROIFull"))
+    (:file "_package_setROIFull" :depends-on ("_package"))
+    (:file "setROI" :depends-on ("_package_setROI"))
+    (:file "_package_setROI" :depends-on ("_package"))
+    (:file "setEdgeEnhancement" :depends-on ("_package_setEdgeEnhancement"))
+    (:file "_package_setEdgeEnhancement" :depends-on ("_package"))
+    (:file "CaptureFrame" :depends-on ("_package_CaptureFrame"))
+    (:file "_package_CaptureFrame" :depends-on ("_package"))
+    (:file "setShutterAuto" :depends-on ("_package_setShutterAuto"))
+    (:file "_package_setShutterAuto" :depends-on ("_package"))
+    (:file "setFPSAuto" :depends-on ("_package_setFPSAuto"))
+    (:file "_package_setFPSAuto" :depends-on ("_package"))
+    (:file "SaveImage" :depends-on ("_package_SaveImage"))
+    (:file "_package_SaveImage" :depends-on ("_package"))
+    (:file "setGainAuto" :depends-on ("_package_setGainAuto"))
+    (:file "_package_setGainAuto" :depends-on ("_package"))
+    (:file "setEncoding" :depends-on ("_package_setEncoding"))
+    (:file "_package_setEncoding" :depends-on ("_package"))
+  ))

@@ -1,0 +1,18 @@
+<launch>
+  <node name="ueyecam" pkg="ueyecam" type="ueyecam" output="screen">
+			<param name="cameraInfoFile" value="file://$(find ueyecam)/camera_info/ueyecam.ini" />
+   		<param name="fps" value="5" />
+			<param name="liveMode" value="false" />
+   		<param name="fullResolution" value="false" /> 		
+   		<param name="encoding" value="mono" />
+			<param name="gainAuto" value="true" />
+   		<!-- only valid if fullResolution is false -->
+   		<param name="roiWidth" value="640" />
+   		<param name="roiHeight" value="480" />
+   		<param name="xOffset" value="0" />
+   		<param name="yOffset" value="0" />
+  </node>
+
+	<node name="mjpeg_server" pkg="mjpeg_server" type="mjpeg_server"/>
+	
+</launch>

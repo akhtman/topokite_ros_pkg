@@ -1,0 +1,53 @@
+#controls, #instruments {
+	font-family: 'Play', sans-serif;
+	font-size: 12px !important;
+	font-weight: normal !important;
+	line-height: 15px !important;
+	width: 322px;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	position: relative;
+	z-index: 2;
+}
+
+#controls {
+	height: 45px;
+	margin: 0;
+}
+
+#controls span {
+	width: 68px;
+	height: 30px;
+	background-color: #eee;
+	border: 1px solid #888;
+	margin: 5px 5px;
+	float: left;
+	text-align: center;
+	vertical-align: middle !important;
+}
+
+#instruments {
+	height: 110px;
+}
+
+#instruments > div {
+	float: left;
+	right: 10px !important;
+	width: 155px;
+	margin: 0 0 0 5px;
+	padding: 0;
+}
+
+#instruments > div > div {
+	width: 100px;
+	text-align: left !important;
+	float: left;
+}
+
+#instruments span {
+	width: 45px;
+	text-align: left !important;
+	padding: 0 1px;
+	float: left;
+}

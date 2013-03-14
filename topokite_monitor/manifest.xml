@@ -1,0 +1,17 @@
+<package>
+  <description brief="topokite_monitor">
+
+     topokite_monitor
+
+  </description>
+  <author>TOPO</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/topokite_monitor</url>
+  <depend package="rosbridge"/>
+	<depend package="asctec_hl_comm"/>
+	<depend package="asctec_hl_interface"/>
+
+</package>
+
+

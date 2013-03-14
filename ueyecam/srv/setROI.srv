@@ -1,0 +1,4 @@
+uint16 width
+uint16 height
+uint16 x_offset
+uint16 y_offset
