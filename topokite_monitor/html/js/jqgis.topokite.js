@@ -88,9 +88,16 @@
 				max: 100, min: 0, thrY: 60, thrR: 80, s: -1, format: '%d' };
 			cpu.H = parseFloat($('#cpu-bar').attr('height'))/(cpu.max-cpu.min);
 			gps = { name: 'gps',
-					states: [ { status: 'GPS fix', label: 'GPS', color: '#00ff00' },
+					states:   [ { status: 'GPS fix', label: 'GPS', color: '#00ff00' },
 					 			{ status: 'GPS no fix', label: 'GPS', color: 'red'},
 								{ status: 'default', label: 'GPS', color: 'red'} ] };
+			flight_mode = { name: 'flight-mode',
+					states:   [ { status: 'Acc', label: 'Acc', color: '#f00' },
+								{ status: 'Height', label: 'Height', color: '#ff0' },
+								{ status: 'GPS', label: 'GPS', color: '#0f0'} ] };
+			serial_control = { name: 'serial-control',
+					states:   [ { status: true, label: 'CTRL', color: '#aaa' },
+								{ status: false, label: 'CTRL', color: '#f00' } ] }
 		});
 		function setBar(bar, value) {
 			$('#'+bar.name+'-value tspan').text(sprintf(bar.format, value));
@@ -104,7 +111,7 @@
 				if (this.status==status) {
 					var label = this.label;
 					if (param) label = label+'('+param+')';
-					$('#'+indicator.name+'-status tspan').text(label).css({ fill: this.color, stroke: this.color })
+					$('#'+indicator.name+'-status').text(label).css({ fill: this.color, stroke: this.color })
 				}
 			})
 		}
@@ -114,6 +121,8 @@
 				if (s.status.battery_voltage) setBar(battery, s.status.battery_voltage);
 				if (s.status.cpu_load) setBar(cpu, s.status.cpu_load);
 				if (s.status.gps_status) setStatus(gps, s.status.gps_status, s.status.gps_num_satellites);
+				if (s.status.flight_mode_ll) setStatus(flight_mode, s.status.flight_mode_ll);
+				setStatus(serial_control, s.status.serial_interface_enabled)
 			}
 			// Position
 			if (s.position) {

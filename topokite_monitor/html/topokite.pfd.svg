@@ -89,16 +89,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142137"
-     inkscape:cx="140.60824"
-     inkscape:cy="319.82894"
+     inkscape:cx="51.159241"
+     inkscape:cy="188.07054"
      inkscape:document-units="px"
-     inkscape:current-layer="targets"
+     inkscape:current-layer="display"
      showgrid="false"
-     inkscape:window-width="1091"
-     inkscape:window-height="1091"
-     inkscape:window-x="815"
-     inkscape:window-y="7"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1440"
+     inkscape:window-height="852"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -255,13 +255,8 @@
        inkscape:connector-curvature="0" />
     <path
        style="font-size:20.09055901px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:-793528.515625%;writing-mode:lr-tb;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke:none;font-family:Letter Gothic Std;-inkscape-font-specification:Letter Gothic Std Bold"
-       d="m 410.97307,766.97729 -0.90974,0 0,8.73359 4.69431,0 0,-0.76419 -3.78457,0 0,-7.9694 z m 4.81609,8.73359 0.90975,0 0,-6.93835 0.0243,-0.0243 2.86268,7.04752 0.86122,0 0,-8.8185 -0.90975,0 0,6.52594 -0.0364,0 -2.65646,-6.52594 -1.05532,0 0,8.73359 z m 8.46722,-9.46139 -3.08102,9.46139 0.98253,0 0.77632,-2.57155 2.65647,0 0.77632,2.57155 0.98253,0 -3.09315,-9.46139 z m 0,2.59582 1.11596,3.52983 -2.21979,0 1.10383,-3.52983 z m 6.16252,5.5434 -0.0243,0 -1.5769,-7.41142 -0.99466,0 1.9408,8.8185 1.24939,0 1.97719,-8.8185 -1.00679,0 -1.56477,7.41142 z"
+       d="m 550.27309,769.80572 -0.90974,0 0,8.73359 4.69431,0 0,-0.76419 -3.78457,0 0,-7.9694 z m 4.81609,8.73359 0.90975,0 0,-6.93835 0.0243,-0.0243 2.86268,7.04752 0.86122,0 0,-8.8185 -0.90975,0 0,6.52594 -0.0364,0 -2.65646,-6.52594 -1.05532,0 0,8.73359 z m 8.46722,-9.46139 -3.08102,9.46139 0.98253,0 0.77632,-2.57155 2.65647,0 0.77632,2.57155 0.98253,0 -3.09315,-9.46139 z m 0,2.59582 1.11596,3.52983 -2.21979,0 1.10383,-3.52983 z m 6.16252,5.5434 -0.0243,0 -1.5769,-7.41142 -0.99466,0 1.9408,8.8185 1.24939,0 1.97719,-8.8185 -1.00679,0 -1.56477,7.41142 z"
        id="text4016"
-       inkscape:connector-curvature="0" />
-    <path
-       style="font-size:20.09055901px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:-793528.515625%;writing-mode:lr-tb;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke:none;font-family:Letter Gothic Std;-inkscape-font-specification:Letter Gothic Std Bold"
-       d="m 457.82448,774.38871 -0.0243,0 -1.5769,-7.41142 -0.99466,0 1.9408,8.8185 1.24939,0 1.97719,-8.8185 -1.00679,0 -1.56477,7.41142 z m 4.00338,1.32217 0.90975,0 0,-6.93835 0.0243,-0.0243 2.86268,7.04752 0.86122,0 0,-8.8185 -0.90974,0 0,6.52594 -0.0364,0 -2.65647,-6.52594 -1.05531,0 0,8.73359 z m 8.46722,-9.46139 -3.08102,9.46139 0.98253,0 0.77632,-2.57155 2.65647,0 0.77632,2.57155 0.98252,0 -3.09314,-9.46139 z m 0,2.59582 1.11596,3.52983 -2.21979,0 1.10383,-3.52983 z m 6.16252,5.5434 -0.0243,0 -1.5769,-7.41142 -0.99466,0 1.94079,8.8185 1.24939,0 1.97719,-8.8185 -1.00678,0 -1.56477,7.41142 z m 10.44489,1.32217 0.90974,0 0,-3.43278 0.76419,0 c 0.87007,0.006 1.57108,-0.20267 2.10304,-0.6247 0.53195,-0.42202 0.80538,-1.09118 0.82029,-2.00751 -0.006,-0.86476 -0.22492,-1.52483 -0.65805,-1.98022 -0.43315,-0.45538 -1.04672,-0.68483 -1.84073,-0.68838 l -2.09848,0 0,8.73359 z m 0.90974,-4.19697 0,-3.77243 1.06745,0 c 0.54357,-0.006 0.96356,0.14228 1.26,0.44426 0.29642,0.30199 0.44653,0.79275 0.45032,1.47228 -0.008,0.61333 -0.17109,1.07578 -0.48975,1.38737 -0.31866,0.31159 -0.74574,0.46776 -1.28123,0.46852 l -1.00679,0 z m 10.2382,-4.53662 -5.83452,0 0,0.76419 2.43812,0 0,7.9694 0.90975,0 0,-7.9694 2.48665,0 0,-0.76419 z m 1.77146,0 -0.90975,0 0,8.73359 0.90975,0 0,-4.14845 3.0325,0 0,4.14845 0.90975,0 0,-8.73359 -0.90975,0 0,3.82095 -3.0325,0 0,-3.82095 z"
-       id="text4020"
        inkscape:connector-curvature="0" />
     <path
        sodipodi:nodetypes="cc"
@@ -467,6 +462,28 @@
          id="tspan3877"
          x="274.23148"
          y="960.47845">100</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="flight-mode-status"
+       y="777.38025"
+       x="317.45477"
+       xml:space="preserve"
+       style="line-height:125%;-inkscape-font-specification:Sans;font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;text-anchor:start;text-align:start;writing-mode:lr"
+       class="status"><tspan
+         sodipodi:role="line"
+         id="tspan3096">MODE</tspan></text>
+    <text
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"
+       x="368.23474"
+       y="777.38025"
+       id="serial-control-status"
+       sodipodi:linespacing="125%"
+       class="status"><tspan
+         sodipodi:role="line"
+         id="tspan3098"
+         x="368.23474"
+         y="777.38025">CTRL</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
